@@ -202,3 +202,43 @@ transform:translateY(-70px);
 }
 
 }
+/* ===== NAVBAR ===== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.55);
+    backdrop-filter:blur(10px);
+    z-index:999;
+}
+
+.logo{
+    color:#D4AF37;
+    font-size:32px;
+    font-weight:800;
+    text-shadow:0 0 20px gold;
+}
+
+.navbar ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.navbar ul li a:hover{
+    color:#D4AF37;
+    text-shadow:0 0 15px gold;
+}
