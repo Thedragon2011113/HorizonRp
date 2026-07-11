@@ -173,3 +173,43 @@ footer{
     background:#111;
     color:#999;
 }
+.rules{
+    padding:100px 10%;
+    background:#0d0d0d;
+    color:#fff;
+    text-align:center;
+}
+
+.rules h2{
+    font-size:45px;
+    color:#FFD700;
+    margin-bottom:50px;
+    text-transform:uppercase;
+}
+
+.rule{
+    max-width:900px;
+    margin:20px auto;
+    padding:25px;
+    background:#181818;
+    border:1px solid rgba(255,215,0,.3);
+    border-radius:15px;
+    transition:.3s;
+}
+
+.rule:hover{
+    transform:translateY(-8px);
+    border-color:#FFD700;
+    box-shadow:0 0 20px rgba(255,215,0,.5);
+}
+
+.rule h3{
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+.rule p{
+    color:#ddd;
+    line-height:1.8;
+    font-size:17px;
+}
