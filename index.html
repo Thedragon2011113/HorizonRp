@@ -31,7 +31,9 @@
 <video class="bg-video" autoplay muted loop playsinline>
 <source src="0515.mp4" type="video/mp4">
 </video>
-
+<audio id="bgmusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
 <div class="overlay"></div>
 
 <div class="content">
@@ -43,6 +45,10 @@
 <a class="btn" href="https://discord.gg/SNGa94NPa" target="_blank">
 JOIN DISCORD
 </a>
+
+<button class="btn" id="musicBtn">
+START MUSIC
+</button>
 
 </div>
 
@@ -90,6 +96,16 @@ professional staff and an amazing community.
 </footer>
 
 <script src="script.js"></script>
+
+<script>
+const music = document.getElementById("bgmusic");
+const btn = document.getElementById("musicBtn");
+
+btn.onclick = () => {
+    music.play();
+    btn.style.display = "none";
+};
+</script>
 
 </body>
 </html>
