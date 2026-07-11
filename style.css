@@ -26,7 +26,8 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:rgba(0,0,0,.45);
+background:rgba(0,0,0,.75);
+border-bottom:1px solid rgba(212,175,55,.3);
     backdrop-filter:blur(10px);
     z-index:1000;
 }
@@ -212,4 +213,20 @@ footer{
     color:#ddd;
     line-height:1.8;
     font-size:17px;
+}
+
+.content .btn{
+    margin:10px;
+}
+
+#musicBtn{
+    background:transparent;
+    color:#FFD700;
+    border:2px solid #FFD700;
+    cursor:pointer;
+}
+
+#musicBtn:hover{
+    background:#FFD700;
+    color:#000;
 }
