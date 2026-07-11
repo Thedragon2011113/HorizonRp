@@ -230,3 +230,70 @@ footer{
     background:#FFD700;
     color:#000;
 }
+/* ===== Animations ===== */
+
+.logo{
+    text-shadow:0 0 10px #FFD700;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px #FFD700;
+    }
+    to{
+        text-shadow:0 0 20px #FFD700,0 0 40px #FFD700;
+    }
+}
+
+.content h1{
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
+}
+
+body{
+    animation: fadePage 1s ease;
+}
+
+@keyframes fadePage{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.navbar a{
+    position:relative;
+}
+
+.navbar a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:#FFD700;
+    transition:.3s;
+}
+
+.navbar a:hover::after{
+    width:100%;
+}
+
+.stat,
+.rule{
+    transition:.4s;
+}
+
+.stat:hover,
+.rule:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.bg-video{
+    transform:scale(1.05);
+}
